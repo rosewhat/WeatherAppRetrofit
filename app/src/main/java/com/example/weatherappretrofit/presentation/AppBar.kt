@@ -54,7 +54,7 @@ fun AppBar(title: String, navController: NavController) {
                 modifier = Modifier
                     .padding(end = 16.dp, top = 8.dp, bottom = 8.dp)
                     .clickable {
-                        navController.navigate("Notifications")
+
                     }
             )
         },

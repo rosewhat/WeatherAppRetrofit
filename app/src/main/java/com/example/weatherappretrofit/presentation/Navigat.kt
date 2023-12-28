@@ -39,10 +39,8 @@ fun SettingsScreen(navController: NavController) {
             modifier = Modifier.padding(bottom = 16.dp)
         )
 
-        // Профиль пользователя
         ProfileSection()
 
-        // Список настроек
         SettingsItem("Избранное")
         SettingsItem("Уведомления")
         SettingsItem("Конфиденциальность")
@@ -51,12 +49,10 @@ fun SettingsScreen(navController: NavController) {
         SettingsItem("Язык")
         SettingsItem("Помощь")
         SettingsItem("Вопросы")
-        // Добавьте больше опций, если нужно
 
         Spacer(modifier = Modifier.height(16.dp))
 
 
-        // Кнопка выхода из аккаунта
         Spacer(modifier = Modifier.height(32.dp))
         Button(
             onClick = {
@@ -88,7 +84,6 @@ fun ProfileSection() {
 
 @Composable
 fun SettingsItem(option: String) {
-    // Элемент списка настроек
     Text(
         text = option,
         style = TextStyle(fontSize = 18.sp),

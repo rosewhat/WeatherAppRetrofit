@@ -119,8 +119,9 @@ fun AppCard(currentDay: MutableState<WeatherInfo>) {
 
                     }) {
                         Icon(
-                            painter = painterResource(id = R.drawable.ic_search),
-                            contentDescription = "image"
+                            painter = painterResource(id = R.drawable.share),
+                            contentDescription = "image",
+                            modifier = Modifier.size(24.dp)
                         )
                     }
                 }
